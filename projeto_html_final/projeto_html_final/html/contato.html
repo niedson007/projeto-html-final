@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="pt-br">
+    <meta name="author" content="niedson">
+    <meta name="keywords" content="HTML, projeto, Niedson, tecnologia">
+    <meta name="description" content="Página de contato e formulário">
+    <title>Contato</title>
+</head>
+<body>
+<header>
+    <h1>Contato</h1>
+    <p>Meu projeto pessoal desenvolvido com <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+</header>
+
+
+<nav>
+    <h2>Menu de Páginas</h2>
+    <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="estudos.html">Estudos</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="objetivos.html">Objetivos</a></li>
+        <li><a href="tecnologia.html">Tecnologia</a></li>
+        <li><a href="esportes.html">Esportes</a></li>
+        <li><a href="musica.html">Música</a></li>
+        <li><a href="rotina.html">Rotina</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+    </ul>
+</nav>
+
+
+<main>
+
+<section>
+    <h2>Entre em contato</h2>
+    <form>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+            </p>
+            <p>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>
+                <label for="assunto">Assunto:</label>
+                <input list="assuntos" id="assunto" name="assunto" placeholder="Escolha ou digite um assunto" required>
+                <datalist id="assuntos">
+                    <option value="Estudos">
+                    <option value="Tecnologia">
+                    <option value="Hobbies">
+                    <option value="HTML">
+                    <option value="Outros">
+                </datalist>
+            </p>
+            <p>Como você conheceu meu projeto?</p>
+            <input type="radio" id="faculdade" name="origem" value="faculdade">
+            <label for="faculdade">Faculdade</label>
+            <input type="radio" id="github" name="origem" value="github">
+            <label for="github">GitHub</label>
+            <p>Quais assuntos você gostaria de conhecer?</p>
+            <input type="checkbox" id="html" name="assuntos_interesse" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="programacao" name="assuntos_interesse" value="programacao">
+            <label for="programacao">Programação</label>
+            <input type="checkbox" id="tecnologia" name="assuntos_interesse" value="tecnologia">
+            <label for="tecnologia">Tecnologia</label>
+            <p>
+                <label for="cor">Escolha uma cor:</label>
+                <input type="color" id="cor" name="cor" value="#000000">
+            </p>
+            <p>
+                <label for="arquivo">Anexar arquivo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <p>
+                <label for="mensagem">Digite sua mensagem:</label>
+            </p>
+            <textarea id="mensagem" name="mensagem" rows="6" cols="50" placeholder="Digite sua mensagem..." required></textarea>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</section>
+
+</main>
+
+
+<footer>
+    <hr>
+    <p>Projeto desenvolvido em HTML para a disciplina de Desenvolvimento Front-End para Web.</p>
+    <p><a href="index.html">Voltar para o início</a></p>
+</footer>
+
+</body>
+</html>
